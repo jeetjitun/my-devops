@@ -125,6 +125,8 @@ HISTORY:
    24  mvn --version
    25  ansible dev -ba "yum install git -y"
    26  ansible test -ba "yum install git -y"
+    *  ansible all -b -m yum -a "pkg=git state=present"
+    *  ansible all -ba "git --version"
    27  ansible all -ba "yum install maven -y"
    28  ansible all -ba "touch file1"
    29  ansible all -ba "ls"
