@@ -87,15 +87,15 @@ its a simple linux commands.
 we can use it for temperory works.
 this commands will be overrided.
 
-ansible all -a "ls"
-ansible all -a "touch abc.txt"
-ansible all -a "yum install git -y"
-ansible all -a "yum install java-1.8.0-openjdk -y"
-ansible all -a "yum install httpd -y"
-ansible all -a "systemctl start httpd"
-ansible all -a "systemctl status httpd"
-ansible all -a "useradd raham"
-ansible all -a "cat /etc/passwd"
+ansible all -ba "ls"
+ansible all -ba "touch abc.txt"
+ansible all -ba "yum install git -y"
+ansible all -ba "yum install java-1.8.0-openjdk -y"
+ansible all -ba "yum install httpd -y"
+ansible all -ba "systemctl start httpd"
+ansible all -ba "systemctl status httpd"
+ansible all -ba "useradd raham"
+ansible all -ba "cat /etc/passwd"
 
 HISTORY:
 
