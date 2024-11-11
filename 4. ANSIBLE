@@ -128,6 +128,8 @@ HISTORY:
     *  ansible all -b -m yum -a "pkg=git state=present"
     *  ansible all -ba "git --version"
    27  ansible all -ba "yum install maven -y"
+    *  ansible all -b -m yum -a "pkg=maven state=present"
+    *  ansible all -ba "mvn --version"
    28  ansible all -ba "touch file1"
    29  ansible all -ba "ls"
    30  ansible all -ba "touch file2"
