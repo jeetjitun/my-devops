@@ -87,15 +87,15 @@ its a simple linux commands.
 we can use it for temperory works.
 this commands will be overrided.
 
-ansible all -ba "ls"
-ansible all -ba "touch abc.txt"
-ansible all -ba "yum install git -y"
-ansible all -ba "yum install java-1.8.0-openjdk -y"
-ansible all -ba "yum install httpd -y"
-ansible all -ba "systemctl start httpd"
-ansible all -ba "systemctl status httpd"
-ansible all -ba "useradd raham"
-ansible all -ba "cat /etc/passwd"
+ansible all -a "ls"
+ansible all -a "touch abc.txt"
+ansible all -a "yum install git -y"
+ansible all -a "yum install java-1.8.0-openjdk -y"
+ansible all -a "yum install httpd -y"
+ansible all -a "systemctl start httpd"
+ansible all -a "systemctl status httpd"
+ansible all -a "useradd raham"
+ansible all -a "cat /etc/passwd"
 
 HISTORY:
 
@@ -123,19 +123,19 @@ HISTORY:
    22  ansible all -m ping
    23  git --version
    24  mvn --version
-   25  ansible dev -a "yum install git -y"
-   26  ansible test -a "yum install git -y"
-   27  ansible all -a "yum install maven -y"
-   28  ansible all -a "touch file1"
-   29  ansible all -a "ls"
-   30  ansible all -a "touch file2"
-   31  ansible all -a "ll"
-   32  ansible all -a "ls"
-   33  ansible all -a "useradd raham"
-   34  ansible all -a "cat /etc/passwd"
-   35  ansible all -a "yum install httpd -y"
-   36  ansible all -a "systemctl start httpd"
-   37  ansible all -a "systemctl status httpd"
+   25  ansible dev -ba "yum install git -y"
+   26  ansible test -ba "yum install git -y"
+   27  ansible all -ba "yum install maven -y"
+   28  ansible all -ba "touch file1"
+   29  ansible all -ba "ls"
+   30  ansible all -ba "touch file2"
+   31  ansible all -ba "ll"
+   32  ansible all -ba "ls"
+   33  ansible all -ba "useradd raham"
+   34  ansible all -ba "cat /etc/passwd"
+   35  ansible all -ba "yum install httpd -y"
+   36  ansible all -ba "systemctl start httpd"
+   37  ansible all -ba "systemctl status httpd"
    38  history
 
 ============================================================================================================
