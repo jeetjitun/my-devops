@@ -190,7 +190,18 @@ loc: hyderabad
 profession: devops
 age: **
 
+==============
+vim raham.yml
 
+- hosts: all
+  become: yes
+  tasks:
+  - name: installing pkg
+    yum: pkg=tree state=present
+
+
+ansible-playbook jeet.yml
+==============
 Gathering Facts means to get info of worker nodes
 it is default task perform by ansible playbook
 
