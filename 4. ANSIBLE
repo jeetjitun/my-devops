@@ -190,7 +190,7 @@ loc: hyderabad
 profession: devops
 age: **
 
-==============
+===============    ============
 vim raham.yml
 
 - hosts: all
@@ -201,7 +201,7 @@ vim raham.yml
 
 
 ansible-playbook jeet.yml
-==============
+==============    =============
 Gathering Facts means to get info of worker nodes
 it is default task perform by ansible playbook
 
