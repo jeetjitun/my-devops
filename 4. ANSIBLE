@@ -199,6 +199,14 @@ vim raham.yml
   - name: installing pkg
     yum: pkg=tree state=present
 
+OR
+
+- hosts: all
+  become: yes
+  tasks:
+  - name: installing pkg
+    action: yum pkg=tree state=present
+
 
 ansible-playbook jeet.yml
 ==============    =============
